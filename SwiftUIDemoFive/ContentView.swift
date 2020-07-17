@@ -28,11 +28,10 @@ struct ContentView: View {
                 
                 Spacer()
                 Rectangle()
-                    .frame(width: 200, height: 200)
+                    .frame(width: 230, height: 230)
                     .foregroundColor(Color(.displayP3, red: red/255, green: green/255, blue: blue/255, opacity: opacity/1))
-                    //.opacity(1)
                     .shadow(radius: 1)
-                    .cornerRadius(20)
+                    .clipShape(Circle())
                 
                Spacer()
                 
